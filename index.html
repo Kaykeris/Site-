@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Add EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#features">Serviços</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#knowledge">Conhecimentos</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1>Bem-vindo à K Company</h1>
+        <p>Transformando ideias em realidade digital</p>
+        <a href="#contact" class="btn">Entre em Contato</a>
+    </header>
+
+    <section class="features" id="features">
+        <h2>Serviços</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Design Responsivo</h3>
+                <p>Sites que se adaptam perfeitamente a qualquer dispositivo</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>Alta Performance</h3>
+                <p>Soluções otimizadas para máximo desempenho</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3>Suporte 24/7</h3>
+                <p>Assistência técnica sempre que você precisar</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Sobre</h2>
+        <p>Somos uma empresa dedicada a criar soluções digitais inovadoras que impulsionam o sucesso dos nossos clientes. Com anos de experiência no mercado, nossa equipe está comprometida em entregar resultados excepcionais.</p>
+    </section>
+
+    <section class="knowledge" id="knowledge">
+        <h2>Conhecimentos</h2>
+        <p>Aqui estão algumas das áreas de conhecimento que dominamos:</p>
+        <ul>
+            <li><i class="fas fa-code"></i>Desenvolvimento Web</li>
+            <li><i class="fab fa-php"></i>PHP</li>
+            <li><i class="fab fa-python"></i>Python</li>
+            <li><i class="fas fa-database"></i>SQL</li>
+            <li><i class="fab fa-css3-alt"></i>CSS</li>
+            <li><i class="fas fa-tasks"></i>Gestão de Projetos</li>
+        </ul>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>Portfólio</h2>
+        <p>Confira alguns projetos anteriores:</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>E-commerce</h3>
+                <p>Loja virtual completa com sistema de pagamentos.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Dashboard Analytics</h3>
+                <p>Painel de controle com métricas em tempo real.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Aplicativo Mobile</h3>
+                <p>App multiplataforma com sincronização em nuvem.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Seu Email" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-comment"></i>
+                <textarea id="message" name="message" placeholder="Sua Mensagem" required></textarea>
+            </div>
+            <div style="position: relative;">
+                <button type="submit" id="submit-btn" class="submit-btn">Enviar Mensagem</button>
+                <div id="loading-text" style="display: none;">Enviando mensagem...</div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 K Company. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Botão de voltar ao topo -->
+    <button class="scroll-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
