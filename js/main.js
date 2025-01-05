@@ -1,6 +1,6 @@
 // Initialize EmailJS with your public key
 (function() {
-    emailjs.init("GJpHwAEl8pon3yJge"); // Replace with your actual EmailJS public key
+    emailjs.init("GJpHwAEl8pon3yJge"); 
 })();
 
 // Function to handle form submission
@@ -18,7 +18,7 @@ function handleSubmit(event) {
         from_name: document.getElementById('name').value,
         from_email: document.getElementById('email').value,
         message: document.getElementById('message').value,
-        to_name: 'K Company', // Your company name
+        to_name: 'K Company', 
     };
 
     emailjs.send('service_007', 'template_nyk7yho', templateParams)
